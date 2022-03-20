@@ -1,0 +1,210 @@
+.background-navy {
+  background-color: #11324D;
+}
+
+.landing {
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  padding: 5rem;
+  max-width: 90rem;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.landing .shape {
+  width: 10rem;
+  height: 10rem;
+}
+.landing .nav-and-headings {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.landing .nav-and-headings nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.landing .nav-and-headings nav a {
+  color: #E7E0C9;
+}
+.landing .nav-and-headings .flex-end {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.landing h1 {
+  color: #E7E0C9;
+}
+.landing h1 .next-line {
+  display: block;
+}
+.landing h2 {
+  color: #E7E0C9;
+  font-weight: 100;
+  font-size: 1rem;
+  word-spacing: 0.5em;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  margin: 0;
+  font-size: 4rem;
+  font-weight: 900;
+  letter-spacing: 0.125em;
+}
+
+h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  letter-spacing: 0.125em;
+  font-weight: lighter;
+}
+
+a {
+  letter-spacing: 0.125em;
+  word-spacing: 0.2em;
+}
+
+p {
+  max-width: 30rem;
+}
+
+.background-grey {
+  background-color: #D0D0D0;
+}
+
+.info {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 1fr;
+  grid-template-columns: 2fr 1fr;
+  -ms-grid-rows: -webkit-max-content;
+  -ms-grid-rows: max-content;
+  grid-template-rows: -webkit-max-content;
+  grid-template-rows: max-content;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  max-width: 90rem;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+}
+
+.info > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+
+.info > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+}
+.info .aboutme {
+  background-color: #E7E0C9;
+  padding: 3rem;
+  margin: 2rem;
+  position: relative;
+  top: -12rem;
+  left: 5rem;
+}
+.info .languages {
+  background-color: #8C9ABD;
+  padding: 5rem;
+  margin: 3rem;
+  position: relative;
+  right: 5rem;
+  top: 3rem;
+  z-index: 1;
+}
+.info .tools {
+  background-color: #C1CFC0;
+  padding: 4rem;
+  margin: 3.5rem;
+  position: relative;
+  left: 8rem;
+  top: -5rem;
+}
+
+.background-navy {
+  background-color: #11324D;
+}
+
+.landing {
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  padding: 5rem;
+  max-width: 90rem;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.landing .shape {
+  width: 10rem;
+  height: 10rem;
+}
+.landing .nav-and-headings {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.landing .nav-and-headings nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.landing .nav-and-headings nav a {
+  color: #E7E0C9;
+}
+.landing .nav-and-headings .flex-end {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.landing h1 {
+  color: #E7E0C9;
+}
+.landing h1 .next-line {
+  display: block;
+}
+.landing h2 {
+  color: #E7E0C9;
+  font-weight: 100;
+  font-size: 1rem;
+  word-spacing: 0.5em;
+}
