@@ -1,0 +1,20 @@
+$navy: #11324D;
+$beige: #E7E0C9;
+$lime: #C1CFC0;
+$grey: #11324D;
+$purple: #8C9ABD;
+
+@mixin add-gt_lt(){
+    &::before{
+        content: "<";
+        display: inline-block;
+    }
+    &::after{
+        content: ">";
+        display: inline-block;
+    }
+}
+
+.decor {
+    @include add-gt_lt;
+}
