@@ -2,13 +2,13 @@
 
 
 .background-navy{
-    background-color: $navy;
+    background-color: $primary;
 }
 
 .landing {
-    height: 110vh;
+    height: 100vh;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     padding: 5rem;
     max-width: 90rem;
     margin-left: auto;
@@ -21,16 +21,25 @@
         height: 10rem;
     }
 
+    .arrow-svg {
+        max-height: 50vh;
+    }
+
     .nav-and-headings{
         display: flex;
         flex-direction: column;
+        text-align: center;
 
         nav{
+            text-align: left;
             display: flex;
             flex-direction: column;
 
             a{
-                color: $beige;
+                color: $sec;
+            }
+            a:first-of-type{
+                color: $accent;
             }
         }
         
@@ -38,22 +47,22 @@
             justify-self: center;
             margin-top: auto;
             margin-bottom: auto;
-
+            
+            h2{
+                color: $accent;
+                font-weight: 400;
+                font-size: 1rem;
+            }
         }
+        background-image: url("../img/blob.gif");
+        background-repeat: no-repeat;
+        background-position: center;
     }
         
 
     h1{
-        color: $beige;
-        .next-line{
-            display: block;
-        }
+        color: $sec;
     }
-    h2{
-        color: $beige;
-        font-weight: 100;
-        font-size: 1rem;
-        word-spacing: 0.5em;
-    }
+   
 
 }

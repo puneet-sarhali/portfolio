@@ -1,17 +1,15 @@
-$navy: #11324D;
-$beige: #E7E0C9;
-$lime: #C1CFC0;
-$grey: #11324D;
-$purple: #8C9ABD;
+$primary: #F1FAEE;
+$primaryv1: #E7E0C9;
+$primaryv2: #C1CFC0;
+$sec: #000;
+$accent: #E63946;
 
 @mixin add-gt_lt(){
     &::before{
         content: "<";
-        display: inline-block;
     }
     &::after{
         content: ">";
-        display: inline-block;
     }
 }
 

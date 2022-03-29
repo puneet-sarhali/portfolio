@@ -4,6 +4,8 @@ body{
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+    background-color: $primary;
+
 }
 
 h1{
@@ -21,14 +23,27 @@ h2{
 }
 
 a{
-    letter-spacing: 00.125em;
+    letter-spacing: 0.125em;
     word-spacing: 0.2em;
 }
 
 p{
     max-width: 30rem;
+    font-weight: 200;
+    word-spacing: 0.2em;
+}
+.next-line{
+    display: block;
 }
 
 h3{
-    
+    letter-spacing: 0.125em;
+    font-weight: 500;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-weight: 200;
 }

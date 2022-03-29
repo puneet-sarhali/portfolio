@@ -22,6 +22,3 @@ timeline.add({
     duration: 2000,
     delay: 2000
 })
-
-
-
