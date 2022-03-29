@@ -48,6 +48,14 @@
   background-image: url("../img/blob.gif");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: contain;
+}
+.landing .nav-and-headings .logo {
+  text-align: left;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: #E63946;
+  font-weight: 400;
 }
 .landing .nav-and-headings nav {
   text-align: left;
@@ -61,9 +69,6 @@
 }
 .landing .nav-and-headings nav a {
   color: #000;
-}
-.landing .nav-and-headings nav a:first-of-type {
-  color: #E63946;
 }
 .landing .nav-and-headings .flex-end {
   -ms-grid-column-align: center;
@@ -142,6 +147,24 @@ ul {
 }
 .decor::after {
   content: ">";
+}
+
+.bg-contact {
+  background-color: #C1CFC0;
+  max-width: 20rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5rem;
+}
+.bg-contact h2 {
+  color: #E63946;
+  margin-bottom: 2rem;
+}
+.bg-contact ul {
+  margin-left: 2rem;
+}
+.bg-contact ul li a {
+  color: black;
 }
 
 .decor::before {
@@ -240,6 +263,14 @@ ul {
   background-image: url("../img/blob.gif");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: contain;
+}
+.landing .nav-and-headings .logo {
+  text-align: left;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: #E63946;
+  font-weight: 400;
 }
 .landing .nav-and-headings nav {
   text-align: left;
@@ -253,9 +284,6 @@ ul {
 }
 .landing .nav-and-headings nav a {
   color: #000;
-}
-.landing .nav-and-headings nav a:first-of-type {
-  color: #E63946;
 }
 .landing .nav-and-headings .flex-end {
   -ms-grid-column-align: center;

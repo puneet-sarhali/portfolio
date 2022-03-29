@@ -30,6 +30,13 @@
         flex-direction: column;
         text-align: center;
 
+        .logo{
+            text-align: left;
+            font-size: 1rem;
+            margin-bottom: 1rem;
+            color: $accent;
+            font-weight: 400;
+        }
         nav{
             text-align: left;
             display: flex;
@@ -37,9 +44,6 @@
 
             a{
                 color: $sec;
-            }
-            a:first-of-type{
-                color: $accent;
             }
         }
         
@@ -57,6 +61,7 @@
         background-image: url("../img/blob.gif");
         background-repeat: no-repeat;
         background-position: center;
+        background-size: contain;
     }
         
 

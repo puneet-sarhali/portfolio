@@ -14,11 +14,11 @@ html(lang='en')
         .background-navy
             .landing
                 .nav-and-headings
+                    h2.decor.logo ps
                     nav 
-                        a.decor(href="") ps
-                        a(href="") about me 
-                        a(href="") projects 
-                        a(href="") say hello  
+                        a(href="#aboutme") about me 
+                        a(href="#projects") projects 
+                        a(href="#contact") say hello  
                     div.flex-end
                         h1 PUNEET #[span.next-line SANDHU]
                         h2 front-end  web  developer 
@@ -26,7 +26,7 @@ html(lang='en')
                         
                     
         
-        .background-wrap 
+        .background-wrap(id="aboutme") 
             .info-wrapper
                 h2.decor about me
                 .info 
@@ -53,15 +53,24 @@ html(lang='en')
                             li google 
                             li npm                     
                 h2.decor about me
-        .background-3 
+        .background-3(id="projects") 
             .container-3 
                 h2.decor projects
                 .projects
                     .p1 
-                        h3.decor p1
+                        h3.decor p1: API HUB
                         a(href="") live website 
                         a(href="") source code
                 h2.decor projects
+        .bg-contact(id="contact") 
+            h2.decor say hello!
+            ul 
+                li psa92@sfu.ca
+                li #[a(href="") github]
+                li #[a(href="") linkedIn]
+
+
+
 
 
                     
