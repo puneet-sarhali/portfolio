@@ -1,8 +1,9 @@
-$primary: #F1FAEE;
-$primaryv1: #E7E0C9;
-$primaryv2: #C1CFC0;
+$primary: #e8e8e8;
+$primaryv1: #eee;
+$primaryv2: #f7f6f6;
 $sec: #000;
-$accent: #E63946;
+$accent: #3A7FCF;
+
 
 @mixin add-gt_lt(){
     &::before{

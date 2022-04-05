@@ -1,0 +1,28 @@
+@import 'inc/variables';
+
+
+footer {
+    .bg-box-flat{
+        margin-top: 10rem;
+        max-width: 30rem;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        text-align: center;
+        background-color: $accent;
+        color: white;
+        position: relative;
+
+        img {
+            position: absolute;
+            left: 5rem;
+            top: 0.6rem;
+        }
+    }
+    @media only screen and (max-width: 50rem){
+        .bg-box-flat{
+            margin-top: 3rem;
+        }
+    }
+}

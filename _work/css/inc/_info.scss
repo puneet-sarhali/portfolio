@@ -1,41 +1,61 @@
 @import 'inc/variables';
 .background-wrap{
-    background-color: $primaryv1;
-    margin-left: 10rem;
-    margin-bottom: 10rem;
+    margin-bottom: 2rem;
 }
 
 
-.info-wrapper {
-    max-width: 75rem;
-    margin: auto;
-    padding: 5rem 0 5rem 5rem;
-    h2{
-        color: $accent;
-    }
-}
 
 .info {
+
     .box1{
+        text-align: center;
+        position: relative;
         grid-area: bio;
+        p{
+            margin-left: auto;
+            margin-right: auto;
+        }
     }
     .box2{
-        grid-area: tools;
+        position: relative;
+        grid-area: lan;
+        margin-right: 2rem;
     }
     .box3{
-        grid-area: lan;
+        position: relative;
+        grid-area: tools;
+        margin-left: 2rem;
     }
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-areas:
-        "bio  bio bio bio"
-        "tools lan .... ....";
-    padding: 3rem 2rem 3rem 3rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "bio bio"
+                        "lan tools";
 
     section{
-        margin: 0 1rem;
-        h3{
-            font-size: 1rem;
+        h2{
+            margin-bottom: 2rem;
+        }
+        p{
+            font-weight: 300;
+        }
+        li{
+            font-weight: 300;
+        }
+    }
+    
+    
+}
+
+@media only screen and (max-width: 35rem) {
+    .info {
+        grid-template-columns: 1fr;
+        grid-template-areas: "bio"
+                        "lan" "tools";
+        .box2{
+            margin-right: 1rem;
+        }
+        .box3{
+            margin-left: 1rem;
         }
     }
     

@@ -16,25 +16,22 @@ html(lang='en')
                 .nav-and-headings
                     h2.decor.logo ps
                     nav 
-                        a(href="#aboutme") about me 
                         a(href="#projects") projects 
                         a(href="#contact") say hello  
                     div.flex-end
                         h1 PUNEET #[span.next-line SANDHU]
                         h2 front-end  web  developer 
-                        
-                        
-                    
-        
+        .line 
         .background-wrap(id="aboutme") 
-            .info-wrapper
-                h2.decor about me
+            .wrapper 
                 .info 
-                    section.box1
-                        h3.decor bio
-                        p hi, i'm 3rd year software systems student at SFU. applying my critical thinking to solve problems and learn from my mistakes. using my proficiencies in html, css, js to build clean, responsive and efficient websites. staying focused with the help of caffeine, soccer and naps.
-                    section.box2
-                        h3.decor languages
+                    section.box1.bg-box
+                        img(src="img/bio.png", alt="avatar icon", height="64", width="64").icon-top
+                        h2 Little bit #[span.keyword-acc about me]:
+                        p Hi, I'm a 3rd year Software Systems student at SFU, applying my critical thinking to solve problems and learn from my mistakes. Using my proficiencies in web development technologies to design and build #[span.bold clean, responsive and efficient] websites. Staying focused with the help of caffeine, soccer and naps.
+                    section.box2.bg-box
+                        img(src="img/languages.png", alt="Html file on desktop icon", height="64", width="64").icon
+                        h2 #[span.keyword-acc Languages] i've been working with:
                         ul 
                             li html
                             li css 
@@ -44,37 +41,91 @@ html(lang='en')
                             li angular 
                             li python 
                             li c++
-                    section.box3
-                        h3.decor tools
+                    section.box3.bg-box
+                        img(src="img/tools.png", alt="Toolkit icon", height="64", width="64").icon
+                        h2 My productivity #[span.keyword-acc toolkit]:
                         ul  
                             li figma
                             li git
                             li vs code 
                             li google 
-                            li npm                     
-                h2.decor about me
-        .background-3(id="projects") 
-            .container-3 
-                h2.decor projects
-                .projects
-                    .p1 
-                        h3.decor p1: API HUB
-                        a(href="") live website 
-                        a(href="") source code
-                h2.decor projects
-        .bg-contact(id="contact") 
-            h2.decor say hello!
-            ul 
-                li psa92@sfu.ca
-                li #[a(href="") github]
-                li #[a(href="") linkedIn]
-
-
-
-
-
-                    
+                            li npm  
+        .line  
+        section.projects(id="projects")
+            .wrapper 
                 
+                    h2 Some of the #[span.keyword-sec projects] that I recently #[span.keyword-sec completed:] 
+                    .bg-box 
+                        .summary 
+                            h3.count 01
+                            h4 API HUB
+                            img(src="img/css.png", alt="CSS icon", height="64", width="64").icon-top
+                            .pj-grid
+                                .pj-info
+                                    p My #[span.bold first front-end project], In which I designed and built a prototype for an API Marketplace using #[span.bold HTML and CSS]. 
+                                    img(src="img/p1.png", alt="API HUB project screenshot", width="490", height="296").responsive
+                                .pj-btns
+                                    a(href="https://www.sfu.ca/siat/student_projects/iat339_2022/psa9/p2/", target="_blank").btn-primary WEBSITE 
+                                    a(href="https://github.sfu.ca/psa92/p2", target="_blank").btn-primary GITHUB 
+                                    button.btn-primary.detail-btn ANALYSIS          
+                        .details.hide 
+                            .line 
+                            .details-grid
+                                .box1.box
+                                    h3 A little Overview: 
+                                    p We were assigned to create a mock front-end for an online shop using HTML and CSS. Me and my partner, Gaurav Gupta came up with the idea to create an API marketplace. My contribution consisted of designing and implementing landing page and individual product pages.
+                                        
+                                .box2.box
+                                    h3 Problems I encountered: 
+                                    ol 
+                                        li At first I was copying and pasting hex codes for each of the colors that I was using, this made any change to color pallete a very manual task. 
+                                        li In terms of design, We couldn’t use the structure of traditional marketplaces such as Amazon because a developer who is looking for an API will not base his decision on a picture and a price tag.
+                                .box3.box
+                                    h3 Solutions that worked: 
+                                    ol 
+                                        li My experience with other languages helped me find out that there are variables available for use is CSS aswell. 
+                                        li I decided to create the listing suchs that it shows more information about the API than a large image. Similarly. Instead of a single price tag a developer wants a choice between tiers which fits to his use of the API. So, I used CSS grids to create responsive listings and pricing models for the website. 
+                                    p
+                                .box4.box
+                                    h3 What i learned 
+                                    ol 
+                                        li 
+                                            div 
+                                                p Maintaining a large CSS file is difficult. Therefore, modularized code with sass is beneficial.
+                                                img(src="img/sass.png", alt="SASS icon", height="64", width="64")
+                                        li 
+                                            div 
+                                                p Absolute positions and fixed values makes it very hard to make the website accessible. 
+                                                img(src="img/responsive.png", alt="Responsiveness icon")
+                    
+            
+        section.projects
+            .wrapper 
+                h2 #[span.keyword-sec Projects] that I am currently #[span.keyword-sec working on]: 
+                .going-grid
+                    .bg-box.box1
+                        h3.count 02
+                        h4 Covid Cases Visulaizer 
+                        img(src="img/angular.png", alt="Angular icon", height="64", width="64").icon-top
+                        p Currently working on building a covid cases visualizer with #[span.bold Angular] using a public #[span.bold API] for the data. 
+                        p Est Completion: April 11, 2022 
+                        p View my progress at github: 
+                        a(href="https://github.com/puneet-sarhali/angular-covid", target="_blank").btn-primary GITHUB 
+                    .bg-box.box2
+                        h3.count 03
+                        h4 Clickbait Title Predictor
+                        img(src="img/python.png", alt="Python programming language Icon", height="64", width="64").icon-top
+                        p At backend a #[span.bold Python Machine Learning model] which predicts whether a given title is a clickbait or not. Front-end built with #[span.bold html and sass]. 
+                        p Est Completion: April 30, 2022 
+                        p View my progress at github: 
+                        a(href="https://github.com/cmpt353-spring-2022/nlp-project/tree/main",target="_blank" ).btn-primary GITHUB 
+        .line           
+        footer(id="contact")
+            .wrapper 
+                .bg-box-flat
+                    //- img(src="img/hello.png", alt="", height="64", width="64")
+                    h2 Say #[span.bold hello] at #[span.bold psa92.sfu.ca] 
 
-        script(src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js")
-        script(src="anime.js")
+
+
+        script(src="script.js")
