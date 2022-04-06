@@ -14,7 +14,6 @@ html(lang='en')
         .background-navy
             .landing
                 .nav-and-headings
-                    h2.decor.logo ps
                     nav 
                         a(href="#projects") projects 
                         a(href="#contact") say hello  
@@ -73,29 +72,41 @@ html(lang='en')
                             .details-grid
                                 .box1.box
                                     h3 A little Overview: 
-                                    p We were assigned to create a mock front-end for an online shop using HTML and CSS. Me and my partner, Gaurav Gupta came up with the idea to create an API marketplace. My contribution consisted of designing and implementing landing page and individual product pages.
+                                    p We were assigned to create a #[span.bold mock front-end] for an online shop using HTML and CSS. Me and my partner, Gaurav Gupta came up with the idea to create an API marketplace. #[span.bold My contribution] consisted of #[span.bold designing and implementing landing page and individual product pages].
                                         
                                 .box2.box
                                     h3 Problems I encountered: 
                                     ol 
-                                        li At first I was copying and pasting hex codes for each of the colors that I was using, this made any change to color pallete a very manual task. 
-                                        li In terms of design, We couldn’t use the structure of traditional marketplaces such as Amazon because a developer who is looking for an API will not base his decision on a picture and a price tag.
+                                        li 
+                                            div
+                                                p first I was copying and #[span.bold pasting hex codes] for each of the colors that I was using, this made any change to color pallete a very manual task. 
+                                                img(src="img/manual-color.png", alt="Adding color in css without variables", height="105", width="250").responsive
+                                        li 
+                                            div
+                                                p In terms of design, We couldn’t use the #[span.bold structure of image based product listings] because a developer who is looking for an API will not base his decision on a picture and a price tag.
+                                                img(src="img/zara.png", alt="Zara product listing", height="260", width="313").responsive
                                 .box3.box
                                     h3 Solutions that worked: 
                                     ol 
-                                        li My experience with other languages helped me find out that there are variables available for use is CSS aswell. 
-                                        li I decided to create the listing suchs that it shows more information about the API than a large image. Similarly. Instead of a single price tag a developer wants a choice between tiers which fits to his use of the API. So, I used CSS grids to create responsive listings and pricing models for the website. 
+                                        li 
+                                            div 
+                                                p My experience with other languages helped me find out that there are #[span.bold variables] available for use is CSS aswell. 
+                                                img(src="img/variables.png", alt="Css variables", height="112", width="310").responsive
+                                        li 
+                                            div 
+                                                p I decided to create the listing such that it shows #[span.bold more information] about the API than a large image. Similarly, Instead of a single price tag a developer wants a choice between tiers which fits to his use of the API. So, I used #[span.bold CSS grids] to create responsive listings and pricing models for the website. 
+                                                img(src="img/p1listing.png", alt="Listings in API HUB project", height="260", width="450").responsive
                                     p
                                 .box4.box
                                     h3 What i learned 
                                     ol 
                                         li 
                                             div 
-                                                p Maintaining a large CSS file is difficult. Therefore, modularized code with sass is beneficial.
+                                                p Maintaining a large CSS file is difficult. Therefore, #[span.bold modularized code] with sass is beneficial.
                                                 img(src="img/sass.png", alt="SASS icon", height="64", width="64")
                                         li 
                                             div 
-                                                p Absolute positions and fixed values makes it very hard to make the website accessible. 
+                                                p #[span.bold Absolute positions] and fixed values makes it #[span.bold very difficult] to make the #[span.bold website accessible]. 
                                                 img(src="img/responsive.png", alt="Responsiveness icon")
                     
             
@@ -105,7 +116,7 @@ html(lang='en')
                 .going-grid
                     .bg-box.box1
                         h3.count 02
-                        h4 Covid Cases Visulaizer 
+                        h4 Covid Cases Visualizer 
                         img(src="img/angular.png", alt="Angular icon", height="64", width="64").icon-top
                         p Currently working on building a covid cases visualizer with #[span.bold Angular] using a public #[span.bold API] for the data. 
                         p Est Completion: April 11, 2022 
@@ -118,7 +129,7 @@ html(lang='en')
                         p At backend a #[span.bold Python Machine Learning model] which predicts whether a given title is a clickbait or not. Front-end built with #[span.bold html and sass]. 
                         p Est Completion: April 30, 2022 
                         p View my progress at github: 
-                        a(href="https://github.com/cmpt353-spring-2022/nlp-project/tree/main",target="_blank" ).btn-primary GITHUB 
+                        a(href="https://github.com/puneet-sarhali/angular-covid",target="_blank" ).btn-primary GITHUB 
         .line           
         footer(id="contact")
             .wrapper 

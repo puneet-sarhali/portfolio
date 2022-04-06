@@ -5,15 +5,3 @@ $sec: #000;
 $accent: #3A7FCF;
 
 
-@mixin add-gt_lt(){
-    &::before{
-        content: "<";
-    }
-    &::after{
-        content: ">";
-    }
-}
-
-.decor {
-    @include add-gt_lt;
-}

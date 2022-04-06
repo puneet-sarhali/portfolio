@@ -39,6 +39,11 @@
             a{
                 color: $sec;
                 margin-bottom: 0.5rem;
+                transition: all 0.8s ease;
+            }
+            a:hover{
+                color: $accent;
+                transform: scale(1.01);
             }
         }
         
