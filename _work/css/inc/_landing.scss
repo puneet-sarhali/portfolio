@@ -1,76 +1,66 @@
-@import 'inc/variables';
-
-
+@import "inc/variables";
 
 .landing {
-    height: 80vh;
-    display: grid;
-    grid-template-columns: 1fr;
-    padding: 5rem;
-    max-width: 75rem;
-    margin-left: auto;
-    margin-right: auto;
-    box-sizing: border-box;
+  height: 60vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 5rem;
+  max-width: 75rem;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
 
+  .nav-and-headings {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    // background-image: url("../img/blob.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
 
-
-
-    .nav-and-headings{
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        background-image: url("../img/blob.gif");
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: contain;
-
-        .logo{
-            text-align: left;
-            font-size: 1rem;
-            margin-bottom: 0.5rem;
-            color: $accent;
-            font-weight: 400;
-        }
-        nav{
-            text-align: left;
-            display: flex;
-            flex-direction: column;
-
-            a{
-                color: $sec;
-                margin-bottom: 0.5rem;
-                transition: all 0.8s ease;
-            }
-            a:hover{
-                color: $accent;
-                transform: scale(1.01);
-            }
-        }
-        
-        .flex-end{
-            justify-self: center;
-            margin-top: auto;
-            margin-bottom: auto;
-            
-            h2{
-                color: $accent;
-                font-weight: 700;
-                font-size: 1rem;
-            }
-        }
-        
+    .logo {
+      text-align: left;
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+      color: $accent;
+      font-weight: 400;
     }
-        
+    nav {
+      text-align: left;
+      display: flex;
+      flex-direction: column;
 
-    h1{
+      a {
         color: $sec;
+        margin-bottom: 0.5rem;
+        transition: all 0.8s ease;
+      }
+      a:hover {
+        color: $accent;
+        transform: scale(1.01);
+      }
     }
-   
 
+    .flex-end {
+      justify-self: center;
+      margin-top: auto;
+      margin-bottom: auto;
+
+      h2 {
+        color: $accent;
+        font-weight: 700;
+        font-size: 1rem;
+      }
+    }
+  }
+
+  h1 {
+    color: $sec;
+  }
 }
 @media only screen and (max-width: 50rem) {
-    .landing{
-        padding: 2rem;
-    }
-    
+  .landing {
+    padding: 2rem;
+  }
 }
