@@ -15,8 +15,12 @@ html(lang='en')
             .landing
                 .nav-and-headings
                     nav 
-                        a(href="#projects") projects 
-                        a(href="#contact") say hello  
+                        a(href="#projects") 📚 projects 
+                        a(href="#contact") 📞 say hello
+                        a(href="https://github.com/puneet-sarhali") 
+                            img(src="img/github.png", alt="github logo" height="25" width="25") 
+                            span github &#8599;
+                        a(href="") 
                     div.flex-end
                         h1 PUNEET #[span.next-line SANDHU]
                         h2 front-end  web  developer 
@@ -27,19 +31,19 @@ html(lang='en')
                     section.box1.bg-box
                         img(src="img/bio.png", alt="avatar icon", height="64", width="64").icon-top
                         h2 Little bit #[span.keyword-acc about me]:
-                        p Hi, I'm a 3rd year Software Systems student at SFU, applying my critical thinking to solve problems and learn from my mistakes. Using my proficiencies in web development technologies to design and build #[span.bold clean, responsive and efficient] websites. Staying focused with the help of caffeine, soccer and naps.
+                        p Hi, I'm a 3rd year Software Systems student at Simon Fraser University, applying my critical thinking to solve problems and learn from my mistakes. Using my proficiencies in web development technologies to design and build #[span.bold clean, responsive and efficient] websites. Staying focused with the help of caffeine, soccer and naps.
                     section.box2.bg-box
                         img(src="img/languages.png", alt="Html file on desktop icon", height="64", width="64").icon
-                        h2 #[span.keyword-acc Languages] i've been working with:
+                        h2 #[span.keyword-acc Technologies] i've worked with:
                         ul 
-                            li html
-                            li css 
-                            li sass 
-                            li javascript
-                            li typescript
-                            li angular 
+                            li angular
+                            li css/sass 
+                            li javascript/typescript
+                            li rxjs
                             li python 
-                            li c++
+                            li c/c++
+                            li postgreSQL/ SQL Server
+                            li Google Cloud/ Firebase
                     section.box3.bg-box
                         img(src="img/tools.png", alt="Toolkit icon", height="64", width="64").icon
                         h2 My productivity #[span.keyword-acc toolkit]:
@@ -49,102 +53,132 @@ html(lang='en')
                             li vs code 
                             li google 
                             li npm  
+                            li docker 
+
         .line  
         section.projects(id="projects")
             .wrapper 
                 
                     h2 Some of the #[span.keyword-sec projects] that I recently #[span.keyword-sec completed:] 
-                    .bg-box 
-                        .summary 
-                            h3.count 01
-                            h4 API HUB
-                            img(src="img/css.png", alt="CSS icon", height="64", width="64").icon-top
-                            .pj-grid
+                    .projects-grid
+                        .bg-box.box1
+                            .summary 
+                                h3.count 01
+                                h4 Open Collab
+                                //- img(src="img/angular.png", alt="Angular icon", height="64", width="64").icon-top
+                                .stack 
+                                    ul
+                                        li 
+                                            img(src="img/angular.png", alt="Angular icon", height="50", width="50")
+                                        li 
+                                            img(src="img/sql.png", alt="nodejs icon", height="50", width="50")
+                                        li 
+                                            img(src="img/gcp.png", alt="Google cloud platform icon", height="50", width="50")
                                 .pj-info
-                                    p My #[span.bold first front-end project], In which I designed and built a prototype for an API Marketplace using #[span.bold HTML and CSS]. 
-                                    img(src="img/p1.png", alt="API HUB project screenshot", width="490", height="296").responsive
+                                    ul 
+                                        li A #[span.bold collaboration tool] for open source developers to propose new project ideas, collaborate with developers interested in your proposal and transparently keep track of the project’s progress through a #[span.bold kanban board]. 
+                                        li Built by gathering information from multiple resources and not just by following a tutorial.
+                                        li #[span.bold Stack:] Angular, PrimeNG, ExpressJS, GCP, PostgreSQL
+                                    //- img(src="img/p1.png", alt="API HUB project screenshot", width="490", height="296").responsive
+                                    
+                                .line 
                                 .pj-btns
-                                    a(href="https://www.sfu.ca/siat/student_projects/iat339_2022/psa9/p2/", target="_blank").btn-primary WEBSITE 
-                                    a(href="https://github.sfu.ca/psa92/p2", target="_blank").btn-primary GITHUB 
-                                    button.btn-primary.detail-btn ANALYSIS          
-                        .details.hide 
+                                    a(href="http://34.95.46.254/#/posts", target="_blank").btn-primary Live &#8599;
+                                    a(href="https://github.com/puneet-sarhali/open-collab", target="_blank").btn-primary GITHUB &#8599;
+                                
+                        .bg-box 
+                            .summary 
+                                h3.count 02
+                                
+                                .stack 
+                                    ul
+                                        li 
+                                             img(src="img/typescript.png", alt="Node icon", height="50", width="50")
+                                        li 
+                                            img(src="img/docker.png", alt="docker icon", height="50", width="50")
+                                        li 
+                                            img(src="img/angular.png", alt="Angular icon", height="50", width="50")
+                                .pj-info
+                                    h4 Note Taker
+                                    ul
+                                        li A simple note taking full stack website with #[span.bold CRUD functionalities], built with Angular and Material UI as the UI library.
+                                        li Mainly built to learn about docker concepts such as #[span.bold dockerfile and docker compose].
+                                        li Use docker compose file in github repository to use the application locally. 
+                                        li #[span.bold Stack:] Angular, ExpressJS, Docker 
+                                    //- img(src="img/p1.png", alt="API HUB project screenshot", width="490", height="296").responsive
+                                .line 
+                                .pj-btns
+                                    //- a(href="https://www.sfu.ca/siat/student_projects/iat339_2022/psa9/p2/", target="_blank").btn-primary Live &#8599;
+                                    a(href="https://github.com/puneet-sarhali/docker-asn", target="_blank").btn-primary GITHUB &#8599;
+
+                        .bg-box
+                            h3.count 03
+                            .stack 
+                                    ul
+                                        li 
+                                            img(src="img/python.png", alt="Python icon", height="50", width="50")
+                            .pj-info
+                                h4 Clickbait Title Predictor
+                                ul 
+                                    li A #[span.bold Python Machine Learning model] which predicts whether a given title is a clickbait or not. 
+                                    li Modelled four different Scikit Learn classifiers with each having a #[span.bold prediction accuracy] score above #[span.bold 90%].
+                                    li Found out that four out of six subreddits have a linear relationship between the score of the post and the title’s clickbait classification 
+                                    li #[span.bold Stack:] Python, NLTK, Spacy, Scikit Learn 
                             .line 
-                            .details-grid
-                                .box1.box
-                                    h3 A little Overview: 
-                                    p We were assigned to create a #[span.bold mock front-end] for an online shop using HTML and CSS. Me and my partner, Gaurav Gupta came up with the idea to create an API marketplace. #[span.bold My contribution] consisted of #[span.bold designing and implementing landing page and individual product pages].
-                                        
-                                .box2.box
-                                    h3 Problems I encountered: 
-                                    ol 
+                            .pj-btns
+                                a(href="https://github.com/cmpt353-spring-2022/nlp-project",target="_blank" ).btn-primary GITHUB &#8599;
+
+                        .bg-box 
+                            .summary 
+                                h3.count 04
+                                
+                                .stack 
+                                    ul
                                         li 
-                                            div
-                                                p first I was copying and #[span.bold pasting hex codes] for each of the colors that I was using, this made any change to color pallete a very manual task. 
-                                                img(src="img/manual-color.png", alt="Adding color in css without variables", height="105", width="250").responsive
+                                            img(src="img/angular.png", alt="Angular icon", height="50", width="50")
                                         li 
-                                            div
-                                                p In terms of design, We couldn’t use the #[span.bold structure of image based product listings] because a developer who is looking for an API will not base his decision on a picture and a price tag.
-                                                img(src="img/zara.png", alt="Zara product listing", height="260", width="313").responsive
-                                .box3.box
-                                    h3 Solutions that worked: 
-                                    ol 
+                                            img(src="img/html.png", alt="html icon", height="50", width="50")
                                         li 
-                                            div 
-                                                p My experience with other languages helped me find out that there are #[span.bold variables] available for use is CSS aswell. 
-                                                img(src="img/variables.png", alt="Css variables", height="112", width="310").responsive
-                                        li 
-                                            div 
-                                                p I decided to create the listing such that it shows #[span.bold more information] about the API than a large image. Similarly, Instead of a single price tag a developer wants a choice between tiers which fits to his use of the API. So, I used #[span.bold CSS grids] to create responsive listings and pricing models for the website. 
-                                                img(src="img/p1listing.png", alt="Listings in API HUB project", height="260", width="450").responsive
-                                    p
-                                .box4.box
-                                    h3 What i learned 
-                                    ol 
-                                        li 
-                                            div 
-                                                p Maintaining a large CSS file is difficult. Therefore, #[span.bold modularized code] with sass is beneficial.
-                                                img(src="img/sass.png", alt="SASS icon", height="64", width="64")
-                                        li 
-                                            div 
-                                                p #[span.bold Absolute positions] and fixed values makes it #[span.bold very difficult] to make the #[span.bold website accessible]. 
-                                                img(src="img/responsive.png", alt="Responsiveness icon")
-                            
-                    .bg-box 
-                        .summary 
-                            h3.count 02
-                            
-                            img(src="img/css.png", alt="CSS icon", height="64", width="64").icon-top
-                            .pj-grid
-                                .pj-btns
-                                    a(href="https://www.sfu.ca/siat/student_projects/iat339_2022/psa9/p2/", target="_blank").btn-primary WEBSITE 
-                                    a(href="https://github.com/puneet-sarhali/angular-covid", target="_blank").btn-primary GITHUB 
+                                            img(src="img/css.png", alt="css icon", height="50", width="50")
                                 .pj-info
                                     h4 COVID CASES VISUALIZER
-                                    p built a covid cases visualizer with #[span.bold Angular] using a public #[span.bold API] for the data. 
-                                    img(src="img/p1.png", alt="API HUB project screenshot", width="490", height="296").responsive
+                                    ul 
+                                        li Built a covid cases visualizer with #[span.bold Angular] using a public #[span.bold API] for the data. 
+                                        li Used ngx-charts UI library to visualize the data received from the API
+                                        li #[span.bold Stack:] Angular, Material UI, ngx-charts, External API
+                                    //- img(src="img/p1.png", alt="API HUB project screenshot", width="490", height="296").responsive
+                                .line
+                                .pj-btns
+                                    a(href="https://covid-canada-297a1.web.app/", target="_blank").btn-primary Live &#8599;
+                                    a(href="https://github.com/puneet-sarhali/angular-covid", target="_blank").btn-primary GITHUB &#8599;
+
+                        
                                 
                     
             
         section.projects
             .wrapper 
                 h2 #[span.keyword-sec Projects] that I am currently #[span.keyword-sec working on]: 
-                .going-grid
-                    //- .bg-box.box1
-                    //-     h3.count 02
-                    //-     h4 Covid Cases Visualizer 
-                    //-     img(src="img/angular.png", alt="Angular icon", height="64", width="64").icon-top
-                    //-     p Currently working on building a covid cases visualizer with #[span.bold Angular] using a public #[span.bold API] for the data. 
-                    //-     p Est Completion: April 11, 2022 
-                    //-     p View my progress at github: 
-                    //-     a(href="https://github.com/puneet-sarhali/angular-covid", target="_blank").btn-primary GITHUB 
-                    .bg-box
-                        h3.count 03
-                        h4 Clickbait Title Predictor
-                        img(src="img/python.png", alt="Python programming language Icon", height="64", width="64").icon-top
-                        p A #[span.bold Python Machine Learning model] which predicts whether a given title is a clickbait or not. Trained using post titles in chosen reddit subreddits. 
-                        p Est Completion: April 30, 2022 
-                        p View my progress at github: 
-                        a(href="https://github.com/puneet-sarhali/angular-covid",target="_blank" ).btn-primary GITHUB 
+                .projects-grid
+                    .going-grid
+                        .bg-box
+                            h3.count 01
+                            .stack 
+                                    ul
+                                        li 
+                                            img(src="img/angular.png", alt="Angular icon", height="50", width="50")
+                                        li 
+                                            img(src="img/firebase.png", alt="firebase icon", height="50", width="50")
+                                        li 
+                                            img(src="img/rxjs.svg", alt="Rxjs icon", height="45", width="45")
+                            h4 Session
+                            //- img(src="img/python.png", alt="Python programming language Icon", height="64", width="64").icon-top
+                            p A website which algorithmically connect students of similar interests to study together and keep each other accountable through video and chat. 
+                            ul 
+                                li #[span.bold Stack:] Angular, Rxjs, Firebase, Tailwind CSS 
+                            p Est MVP date: Sep 8, 2022
+                            p View my progress at github: 
+                            a(href="https://github.com/puneet-sarhali/session",target="_blank" ).btn-primary GITHUB &#8599;
         .line           
         footer(id="contact")
             .wrapper 
@@ -153,5 +187,3 @@ html(lang='en')
                     h2 Say #[span.bold hello] at #[span.bold psa92.sfu.ca] 
 
 
-
-        script(src="script.js")

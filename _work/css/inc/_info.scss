@@ -1,62 +1,52 @@
-@import 'inc/variables';
-.background-wrap{
-    margin-bottom: 2rem;
+@import "inc/variables";
+.background-wrap {
+  margin-bottom: 2rem;
 }
 
-
-
 .info {
+  margin: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  grid-template-areas:
+    "bio bio"
+    "lan tools";
+  .box1 {
+    text-align: center;
+    position: relative;
+    grid-area: bio;
+    p {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  .box2 {
+    position: relative;
+    grid-area: lan;
+  }
+  .box3 {
+    position: relative;
+    grid-area: tools;
+  }
 
-    .box1{
-        text-align: center;
-        position: relative;
-        grid-area: bio;
-        p{
-            margin-left: auto;
-            margin-right: auto;
-        }
+  section {
+    h2 {
+      margin-bottom: 2rem;
     }
-    .box2{
-        position: relative;
-        grid-area: lan;
-        margin-right: 2rem;
+    p {
+      font-weight: 300;
     }
-    .box3{
-        position: relative;
-        grid-area: tools;
-        margin-left: 2rem;
+    li {
+      font-weight: 300;
     }
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "bio bio"
-                        "lan tools";
-
-    section{
-        h2{
-            margin-bottom: 2rem;
-        }
-        p{
-            font-weight: 300;
-        }
-        li{
-            font-weight: 300;
-        }
-    }
-    
-    
+  }
 }
 
 @media only screen and (max-width: 35rem) {
-    .info {
-        grid-template-columns: 1fr;
-        grid-template-areas: "bio"
-                        "lan" "tools";
-        .box2{
-            margin-right: 1rem;
-        }
-        .box3{
-            margin-left: 1rem;
-        }
-    }
-    
+  .info {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "bio"
+      "lan" "tools";
+  }
 }

@@ -34,6 +34,7 @@ p {
   font-weight: 300;
   word-spacing: 0.2em;
   margin-bottom: 1rem;
+  font-family: sans-serif;
 }
 .next-line {
   display: block;
@@ -48,6 +49,10 @@ h3 {
 ul {
   list-style-type: "> ";
   font-weight: 200;
+  font-family: sans-serif;
+  li {
+    margin-bottom: 0.3rem;
+  }
 }
 
 .keyword-acc {
@@ -64,7 +69,7 @@ ul {
   border-radius: 3rem;
   background-color: $primaryv1;
   padding: 4rem;
-  margin: 2rem 4rem;
+  // margin: 2rem 4rem;
   transition: transform 0.8s ease, background-color 0.8s ease;
   position: relative;
 }
@@ -73,7 +78,6 @@ ul {
   border-radius: 3rem;
   background-color: $primaryv1;
   padding: 4rem;
-  margin: 2rem 4rem;
   transition: all 0.8s ease;
   position: relative;
 }
@@ -106,8 +110,6 @@ ul {
   text-decoration: none;
   padding: 0.5rem 1.5rem;
   color: black;
-  width: 6rem;
-  height: 4rem;
   background-color: #c4c4c4;
   transition: transform 0.8s ease, background-color 0.8s ease;
   border-radius: 2.5rem;
@@ -134,7 +136,6 @@ ul {
   }
   .bg-box {
     padding: 4rem 2rem;
-    margin: 3rem 2rem;
   }
 }
 @media only screen and (max-width: 30rem) {
@@ -144,6 +145,5 @@ ul {
 
   .bg-box {
     padding: 4rem 2rem;
-    margin: 3rem 1rem;
   }
 }
